@@ -1,0 +1,18 @@
+<h2> Projects </h2>
+
+<div class="projects">
+  <div *ngFor="let project of projects" class="project" [class.selected] = "project === selectedProject" (click)="onSelect(project)" >
+    <h2 ng-click="show = true" > {{project.title}}</h2>
+    <img [attr.src]= "project.img_src" >
+  </div>
+</div>
+
+<div class="modal-container" *ngIf="selectedProject">
+  <div class="overlay" (click)="onSelect()"> </div>
+  <div class="modal">
+    <h2> {{selectedProject.title}} </h2>
+    <img [attr.src]= "selectedProject.img_src" >
+    <p> {{selectedProject.details}} </p>
+    <a [attr.href]="selectredProject.link"> {{selectedProject.link}} </a>
+  </div>
+</div>
