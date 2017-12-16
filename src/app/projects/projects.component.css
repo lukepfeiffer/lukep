@@ -68,3 +68,11 @@ img{
   max-height: 80px;
   overflow-y: scroll;
 }
+
+.modal a{
+  color: #3d8da9;
+}
+
+.modal a:hover{
+  color: #3A8099;
+}

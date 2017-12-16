@@ -15,15 +15,18 @@ export const PROJECTS: project[] = [
       link: "http://lenseafilm.com/"
   }, { title: "Tuteering",
     img_src:"https://pbs.twimg.com/profile_images/875749462957670400/T0lwiBK8_400x400.jpg",
-    details: "Hackathon project"
+    details: "Hackathon project",
+    link: "https://github.com/lukepfeiffer/tuteering"
   }, { title: "EmployeeNinja",
     img_src:"https://pbs.twimg.com/profile_images/875749462957670400/T0lwiBK8_400x400.jpg",
-    details: "Freststart Software"
+    details: "Freststart Software",
   }, { title: "TargetZero",
     img_src:"https://pbs.twimg.com/profile_images/875749462957670400/T0lwiBK8_400x400.jpg",
-    details: "FreshStart Software"
+    details: "FreshStart Software",
+    link: "http://www.target-zero.org/"
   }, { title: "DESC", 
     img_src:"https://pbs.twimg.com/profile_images/875749462957670400/T0lwiBK8_400x400.jpg", 
-    details: "Volunteering" 
+    details: "Volunteering",
+    link: "https://descjax.org/"
   }
 ];
