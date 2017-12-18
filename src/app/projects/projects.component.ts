@@ -7,9 +7,10 @@ import { PROJECTS } from "../projects-list";
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
+
 export class ProjectsComponent implements OnInit {
   projects = PROJECTS;
-  selectedProject = Project;
+  selectedProject: Project;
 
   constructor() { }
 

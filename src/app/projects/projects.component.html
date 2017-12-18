@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div class="modal-container" *ngIf="selectedProject && selectedProject.length != 0">
+<div class="modal-container" *ngIf="selectedProject">
   <div class="overlay" (click)="onSelect()"> </div>
   <div class="modal-parent" (click)="onSelect()">
     <div class="modal">

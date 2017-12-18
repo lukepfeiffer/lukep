@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>lukerpfeiffer</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"></link>
+  <link href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css", rel="stylesheet", type="text/css"></link>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    var load = true;
+    $(document).ready(function() {
+      window.setInterval( function() {
+        if( window.location.href.includes("about") ){
+          if( load ){
+            $('.scroller').slick({
+              infinite: true,
+              speed: 1000,
+              autoplay: true,
+              autoplaySpeed: 10000,
+              arrows: false,
+              pauseOnHover: true,
+              focusOnSelect: false,
+              slidesToScroll: 1
+            });
+
+            $(".scroller").click(function(e){
+              var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
+              var pOffset = $(this).offset();
+              var x = e.pageX - pOffset.left;
+              if(pWidth/2 > x) {
+                $(".scroller").slick("slickPrev");
+              } else {
+                $(".scroller").slick("slickNext");
+              }
+            });
+
+            $(document).keydown(function(event){
+              switch(event.which){
+                // Left arrow
+                case 37:
+                  $(".scroller").slick("slickPrev");
+                break;
+
+                // Right arrow
+                case 39:
+                  $(".scroller").slick("slickNext");
+                break;
+              }
+            });
+            load = false;
+          }
+        } else {
+          load = true;
+        }
+      }, 50);
+    });
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 import { Project } from './project';
 
-export const PROJECTS: project[] = [
+export const PROJECTS: Project[] = [
   {    title: "Groundswell",
        img_src:"assets/images/groundswell.png",
        details: "This is a case management system for lawyers. A lawyer's technology is typically extremely old. This project seeks to resolve this issue. Groundswell allows for a lawyer to define tasks, track time, email notifications, and even auto generate documents. My specific task was implementing the Microsoft Graph API so that lawyers can upload/manage documents through the Groundswell portal. This project was built with Ruby on Rails, jQuery, and Ember.js.",
@@ -20,6 +20,7 @@ export const PROJECTS: project[] = [
   }, { title: "EmployeeNinja",
        img_src:"assets/images/employee.jpg",
        details: "This was a project built by a former employer of mine, FreshStart Software, to help schedule employees for fast food chains. I was responsible for a number of things including writing tests, writing new features, and refactoring old code. This app was never pushed to a live website.",
+       link: ""
   }, { title: "TargetZero",
        img_src:"assets/images/targetzero.png",
        details: "This application a consultancy project that I worked on with a former employer, FreshStart Software. TargetZero is a nonprofit organization seeking to reduce the euthanization rate of shelter pets to 0%. My task on the project was implementing the Google Maps API so that employees could see a list of cities with the rate of the euthanization rate. I also wrote tests and helped implement a content management system.",

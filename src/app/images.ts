@@ -1,6 +1,6 @@
 import { Image } from './image';
 
-export const IMAGES: image[] = [
+export const IMAGES: Image[] = [
   { title: "About Me", img_name: "assets/images/headshot.jpg",
   description: "Hey guys! My name is Luke Pfeiffer and I am an avid software developer. From my personal company building websites to startups to Google Practicum Engineer, I have worked for all kinds of companies. Outside of programming, I am an active member of the Assocation of Computer Engineers where my graphic design can be seen all of the org's website. If I'm not behind a desk nerding out, you can catch me at the local skatepark trying to do some kickflips!"
   },
