@@ -7,9 +7,16 @@ body{
   width: 81%;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fff;  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #fff, #FAFAFA);  /1* Chrome 10-25, Safari 5.1-6 *1/ */
-  /* background: linear-gradient(to right, #fff, #FAFAFA); /1* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *1/ */
+  background-color: #fff;
+
+  @media only screen and (max-device-width: 1200px){
+    width: 90% !important;
+  }
+
+  @media only screen and (max-device-width: 768px){
+    width: 100% !important;
+  }
+
 }
 
 html{
