@@ -9,6 +9,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ResumeComponent } from './resume/resume.component';
     FooterComponent,
     ProjectsComponent,
     AboutComponent,
-    ResumeComponent
+    ResumeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
