@@ -9,10 +9,12 @@
 
 <div class="modal-container" *ngIf="selectedProject && selectedProject.length != 0">
   <div class="overlay" (click)="onSelect()"> </div>
-  <div class="modal">
-    <h2> {{selectedProject.title}} </h2>
-    <img [attr.src]= "selectedProject.img_src" >
-    <p> {{selectedProject.details}} </p>
-    <a [attr.href]="selectedProject.link" target="_blank"> {{selectedProject.link}} </a>
+  <div class="modal-parent" (click)="onSelect()">
+    <div class="modal">
+      <h2> {{selectedProject.title}} </h2>
+      <img [attr.src]= "selectedProject.img_src" >
+      <p> {{selectedProject.details}} </p>
+      <a [attr.href]="selectedProject.link" target="_blank"> {{selectedProject.link}} </a>
+    </div>
   </div>
 </div>
