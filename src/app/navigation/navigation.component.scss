@@ -23,3 +23,27 @@ a.title{
     border: 1px solid #fafafa;
   }
 }
+
+.fa-bars{
+  display: none;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-device-width: 768px){
+  .fa-bars{
+    display: inline;
+    font-size: 20px;
+    float: right;
+  }
+
+  .title{
+    padding-left: 0;
+  }
+
+  .normal-nav{
+    display: none;
+  }
+}
