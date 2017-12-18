@@ -16,7 +16,15 @@
 }
 
 .project{
-  width: 33.333333%;
+  width: 30%;
+  margin: 10px;
+  padding: 5px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.project:hover{
+  cursor: pointer;
 }
 
 img{
@@ -56,7 +64,7 @@ img{
 }
 
 .modal img{
-  width: 50%;
+  width: 100%;
 }
 
 .modal h2{

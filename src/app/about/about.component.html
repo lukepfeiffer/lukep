@@ -1,3 +1,7 @@
-<p>
-  about works!
-</p>
+<div class="scroller">
+  <div *ngFor="let image of images" class="image">
+    <img [attr.src]= "image.img_name">
+    <h3> {{image.title}} </h3>
+    <p> {{image.description}} </p>
+  </div>
+</div>

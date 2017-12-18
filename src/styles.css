@@ -4,7 +4,35 @@
 
 body{
   margin: 0;
-  width: 60%;
+  width: 81%;
   margin-right: auto;
   margin-left: auto;
+  background-color: #fff;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #fff, #FAFAFA);  /1* Chrome 10-25, Safari 5.1-6 *1/ */
+  /* background: linear-gradient(to right, #fff, #FAFAFA); /1* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *1/ */
+}
+
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main-content{
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #fff;
+  box-shadow: -5px 5px 30px #efefef;
+  border: 1px solid #fafafa;
+  border-top: 1px solid #ccc;
+}
+
+h1{
+  margin: 0;
+  padding-top: 10px;
 }
