@@ -1,3 +1,6 @@
+$soft-gray: #999999;
+$link-color: #517a9e;
+
 ul{
   text-align: left;
   background-color: #fafafa;
@@ -37,6 +40,27 @@ a.title{
     display: inline;
     font-size: 20px;
     float: right;
+  }
+
+  ul{
+  }
+
+  .mobile-nav{
+    margin: 0;
+    padding: 0 !important;
+
+    li{
+      list-style-type: none;
+      text-align: center;
+      padding: 35px 0 15px 0;
+      border-top: 1px solid $soft-gray;
+    }
+    a{
+      color: $link-color;
+      text-transform: lowercase;
+      padding: 0;
+      margin: 0;
+    }
   }
 
   .title{

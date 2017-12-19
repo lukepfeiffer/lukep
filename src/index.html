@@ -15,7 +15,9 @@
 
 </head>
 <body>
-  <app-root></app-root>
+  <div class="body-wrapper">
+    <app-root></app-root>
+  </div>
   <script>
     var load = true;
     $(document).ready(function() {
@@ -71,7 +73,7 @@
 
       // Hide dropdown after clicking link
 
-      $('.mobile-nav').on('click', 'li', function(){
+      $('.mobile-nav').on('click', 'a', function(){
         $('.mobile-nav').hide();
         $('.fa-bars').show();
       });
