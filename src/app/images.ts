@@ -2,7 +2,7 @@ import { Image } from './image';
 
 export const IMAGES: Image[] = [
   { title: "About Me", img_name: "assets/images/headshot.jpg",
-  description: "Hey guys! My name is Luke Pfeiffer and I am an avid software developer. From my personal company building websites to startups to Google Practicum Engineer, I have worked for all kinds of companies. Outside of programming, I am an active member of the Assocation of Computer Engineers where my graphic design can be seen all of the org's website. If I'm not behind a desk nerding out, you can catch me at the local skatepark trying to do some kickflips!"
+  description: "Hey guys! My name is Luke Pfeiffer and I am an avid software developer. From my personal company building websites to startups to Google Practicum Engineer, I have worked for all kinds of companies. Outside of programming, I am an active member of the Association of Computer Engineers where my graphic design can be seen all over the org's website. If I'm not behind a desk nerding out, you can catch me at the local skatepark trying to do some kickflips!"
   },
 
   { title: "Groundswell Interning", img_name: "assets/images/techclub.jpg",
@@ -14,7 +14,7 @@ export const IMAGES: Image[] = [
   },
 
   { title: "Google Ignite CS", img_name: "assets/images/ignitecs.jpg",
-    description: "Ignite CS is an outreach program funded by Google to help minority/disadvantage youth gain an interest in computer science. I spent the spring of 2017 as the Historian for the project. I developed surveys, documented events, and monitored growth of the program. It was amazing giving back to minority students because at one point I was in their exact shoes."
+    description: "Ignite CS is an outreach program funded by Google to help minority/disadvantaged youth gain an interest in computer science. I spent the spring of 2017 as the Historian for the project. I developed surveys, documented events, and monitored growth of the program. It was amazing giving back to minority students because at one point I was in their exact shoes."
   },
 
   { title: "Gator Skate Club", img_name: "assets/images/gatorskate.jpg",
@@ -22,6 +22,6 @@ export const IMAGES: Image[] = [
   },
 
   { title: "Good Times", img_name: "assets/images/fun.jpg",
-    description: "After an extremely brutal volleys of exams, my girlfried, Tamarra, and I had a weeked free so we took a trip to Jacksonville. Needless to say, it was an amazing time."
+    description: "After an extremely brutal volleys of exams, my girlfriend, Tamarra, and I had a weeked free so we took a trip to Jacksonville. Needless to say, it was an amazing time."
   }
 ];
